@@ -47,3 +47,19 @@ console.log("R$", price);
 
 let city = "São Paulo"
 console.log(city);
+
+// TEMPLATE STRING
+let name = "Felipe";
+let lastName = "Passos";
+let fullName = `${name} ${lastName}`;
+
+console.log(fullName);
+
+// CONDICIONAIS
+let year = 2024;
+
+if (year > 2019) {
+    console.log('Voçê passou por uma pandemia.');
+} else {
+    console.log('A humanidade passará por aflições.');
+};
