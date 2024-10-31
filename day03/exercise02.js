@@ -1,3 +1,4 @@
+console.log('## EXERCÍCIOS ##');
 /*
 Crie uma função que valide usuário e senha.
 Usuário correto: pedro
@@ -25,3 +26,5 @@ if (validacao) {
 } else {
     console.log('Acesso NEGADO!');
 }
+
+console.log('------------------------');

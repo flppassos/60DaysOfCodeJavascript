@@ -1,5 +1,5 @@
+console.log('## EXERCÍCIOS ##');
 // EXERCICIOS ARRAY
-
 // 1. No array abaixo, qual o número que pega a Ferrari?
 let carros = ['BMW', 'Ferrari', 'Mercedes'];
 let x = 1;
@@ -17,3 +17,5 @@ console.log(carros);
 
 //4. Exiba quantos itens tem no array
 console.log('4. itens no array: ' + carros.length);
+
+console.log('------------------------');
