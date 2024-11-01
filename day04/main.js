@@ -44,8 +44,16 @@ for(let i in estoqueToner) {
 // FOR ITERANDO PELO VALOR DOS ITENS NO ARRAY
 // A VARIÁVEL DENTRO DO FOR PASSA A SER O PRÓPRIO ITEM DO ARRAY
 console.log('--- Estoque dos produtos: ---');
-
+// FORMA SIMILAR AO FOREACH DO PHP
 for(v of estoqueToner) {
     console.log(`Quantidade em estoque: ${v.qtd}`)
 }
 
+// LOOP COM WHILE
+console.log('--- Trabalhando com While: ---');
+
+let numero = 0;
+while (numero < 10) {
+    console.log(`Número da vez: ${numero}`);
+    numero++;
+}
