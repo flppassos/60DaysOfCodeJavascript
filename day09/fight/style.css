@@ -1,0 +1,30 @@
+.fightarea {
+    /* height: 150px; */
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#player1, 
+#player2 {
+    flex: 1;
+}
+
+.lifebar {
+    height: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.lifebar .bar {
+    height: inherit;
+    width: 10%;
+    background-color: red;
+    border-radius: 5px;
+}
+
+.log{
+    height: 200px;
+    border: 1px dotted red;
+    overflow-y: scroll;
+}
