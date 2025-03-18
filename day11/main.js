@@ -65,7 +65,25 @@ console.log(menuCompleto);
 // comece com um array vazio, por exemplo const matriz = [] e adicione valores nele com push;
 // você pode resolver usando um for dentro de outro for.
 
+let matriz = [];
+let valorInicial = 1;
+
+for (let i = 0; i < 3; i++) {
+  let linha = [];
+  for (let j = 0; j < 3; j++) {
+    linha.push(valorInicial++);
+  }
+  matriz.push(linha);
+}
+
+console.log('Matriz de duas dimensões:');
+console.log(matriz);
+matriz.forEach(row => console.log(row)); // visualização em linhas e colunas
+
 // 6 - Acesse e imprima o elemento na segunda linha e terceira coluna da lista bidimensional matriz criada no exercício anterior.
+console.log('Elemento na segunda linha e terceira coluna:', matriz[1][2]);
 
 //7 - Adicione um novo elemento (por exemplo,15) na terceira linha e segunda coluna da lista bidimensional matriz criada anteriormente.
-
+matriz[2][1] = 15;
+//console.log(matriz[2][1]);
+console.log('Matriz após adição de elemento:', matriz);
