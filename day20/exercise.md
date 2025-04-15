@@ -1,4 +1,4 @@
-1 - Crie um arquivo chamado infoPessoa.js. Nesse arquivo, crie um objeto chamado pessoa que represente informações sobre uma pessoa. Este objeto deve ter as seguintes propriedades:
+### 1 - Crie um arquivo chamado infoPessoa.js. Nesse arquivo, crie um objeto chamado pessoa que represente informações sobre uma pessoa. Este objeto deve ter as seguintes propriedades:
 
 nome (string): Nome da pessoa.
 idade (number): Idade da pessoa.
@@ -12,7 +12,7 @@ No final do arquivo infoPessoa.js, chame a função mostrarInfoPessoa passando o
 
 Dica: você pode usar um método de array para retirar os elementos dos colchetes e exibi-los como texto.
 
-2 - Adicione ao objeto pessoa uma nova propriedade chamada endereco. Esta propriedade deve ser um objeto representando o endereço da pessoa, com as seguintes subpropriedades:
+### 2 - Adicione ao objeto pessoa uma nova propriedade chamada endereco. Esta propriedade deve ser um objeto representando o endereço da pessoa, com as seguintes subpropriedades:
 
 rua (string): nome da rua.
 cidade (string): nome da cidade.
@@ -23,7 +23,7 @@ Modifique a função mostrarInfoPessoa para incluir as informações do endereç
 
 No final do arquivo infoPessoa.js, chame a função mostrarInfoPessoa para verificar se as informações atualizadas, incluindo o endereço, são exibidas corretamente no console.
 
-3 - Crie uma lista de pessoas chamada pessoas que será um array contendo objetos. Cada objeto deve representar uma pessoa e conter as seguintes propriedades:
+### 3 - Crie uma lista de pessoas chamada pessoas que será um array contendo objetos. Cada objeto deve representar uma pessoa e conter as seguintes propriedades:
 
 nome (string): nome da pessoa.
 idade (number): idade da pessoa.
