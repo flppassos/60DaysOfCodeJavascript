@@ -25,5 +25,5 @@ function buscaEstudantePorPropriedade(lista, propriedade){
 }
 
 // Salva uma lista de objetos que não possui cep em endereço
-const listaFiltrada = buscaEstudantePorPropriedade(estudantes, 'cep');
-console.log(listaFiltrada);
+const listaEnderecosIncompletos = buscaEstudantePorPropriedade(estudantes, 'cep');
+console.log(listaEnderecosIncompletos);
