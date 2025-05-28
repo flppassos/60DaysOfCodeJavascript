@@ -1,22 +1,30 @@
 const caminhoArquivo = process.argv;
 const link = caminhoArquivo[2];
 
+const trataErros = require('./erros/trataErros');
 const fs = require("fs");
 
-fs.readFile(link, "utf-8", (err, texto) => {
-  quebraEmParagrafos(texto);
-  // verficaPalavrasDuplicadas(texto);
+fs.readFile(link, "utf-8", (error, texto) => {
+  try {
+    if (error) throw error;
+    contaPalavras(texto);
+  } catch (erro) {
+    trataErros(erro);
+  }
 });
 
-function quebraEmParagrafos(texto) {
-  const paragrafos = texto.toLowerCase().split("\n");
-
+function contaPalavras(texto) {
+  const paragrafos = extraiParagrafos(texto);
   const contagem = paragrafos.flatMap((paragrafo) => {
     if (!paragrafo) return [];
     return verficaPalavrasDuplicadas(paragrafo);
   });
 
   console.log(contagem);
+}
+
+function extraiParagrafos(texto) {
+  return texto.toLowerCase().split("\n");
 }
 
 function limpaPalavra(palavra) {
